@@ -1,0 +1,14 @@
+.makeup {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.makeup h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.makeup p {
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,0 +1,14 @@
+.hairstyle {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hairstyle h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hairstyle p {
+  font-size: 1rem;
+  color: #555;
+}

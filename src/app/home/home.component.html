@@ -1,0 +1,44 @@
+<section class="home">
+  <div class="container">
+    <h1>Welcome to Makeup </h1>
+    <p>Discover the latest trends in makeup and hairstyling</p>
+    <div class="cta">
+      <a href="#" class="btn">Explore Makeup</a>
+      <a href="#" class="btn">Explore Hairstyles</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <h2>Discover the Latest Trends</h2>
+      <p>Explore a diverse collection of makeup styles and hairstyle options to suit every occasion, mood, and personality.</p>
+    </div>
+    <div class="feature">
+      <h2>Expert Advice and Tutorials</h2>
+      <p>Learn from experienced makeup artists and hairstylists with our extensive library of tutorials, tips, and tricks.</p>
+    </div>
+    <div class="feature">
+      <h2>Personalized Recommendations</h2>
+      <p>Find the perfect makeup products and hair care essentials tailored to your unique needs and preferences.</p>
+    </div>
+  </div>
+</section>
+
+<section class="community">
+  <div class="container">
+    <h2>Join Our Community</h2>
+    <p>Connect with like-minded beauty enthusiasts, share your favorite looks, and stay inspired with daily beauty content.</p>
+    <a href="#" class="btn">Join Now</a>
+  </div>
+</section>
+
+<section class="slider">
+  <ngx-slick-carousel class="carousel" [config]="sliderConfig">
+    <div *ngFor="let slide of slides">
+      <img src="{{ slide }}" alt="Slide">
+    </div>
+  </ngx-slick-carousel>
+</section>
+
