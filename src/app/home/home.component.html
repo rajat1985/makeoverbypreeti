@@ -34,11 +34,31 @@
   </div>
 </section>
 
-<section class="slider">
-  <ngx-slick-carousel class="carousel" [config]="sliderConfig">
-    <div *ngFor="let slide of slides">
-      <img src="{{ slide }}" alt="Slide">
-    </div>
-  </ngx-slick-carousel>
-</section>
+<h2>--------------Book Now---------------</h2>
+<form (ngSubmit)="submitBooking()">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="booking.name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="booking.email" required>
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" [(ngModel)]="booking.phone" required>
+  </div>
+  <div>
+    <label for="service">Service:</label>
+    <select id="service" name="service" [(ngModel)]="booking.service" required>
+      <option value="Hairstyle">Hairstyle</option>
+      <option value="Makeup">Makeup</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+  <button type="submit">BOOK NOW</button>
+</form>
+
+
+<ng-image-slider [images]="imageObject" #nav></ng-image-slider>
 
