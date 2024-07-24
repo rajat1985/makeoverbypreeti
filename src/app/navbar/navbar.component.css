@@ -1,7 +1,9 @@
 .navbar {
-  background-color: #333;
-  padding: 1rem 0;
+  background-color: #1a237e !important; /* Changed color to pink */
+  padding: 0.5rem 0;
 }
+
+
 
 .container {
   display: flex;
@@ -30,12 +32,24 @@
   margin-right: 0;
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.nav-link {
+  color: white !important; /* Ensures font color is white */
+  font-family: 'Roboto', sans-serif;
 }
 
-.nav-links li a:hover {
-  color: #ff4081;
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color :white;
+  font-weight: normal;
 }
+
+.navbar-nav li a:hover {
+  text-decoration: underline;
+  color :white;
+  font-weight: normal;
+}
+
+

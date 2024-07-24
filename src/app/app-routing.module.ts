@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { MakeupComponent } from './makeup/makeup.component';
 import { HairstyleComponent } from './hairstyle/hairstyle.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'makeup', component: MakeupComponent },
   { path: 'hairstyle', component: HairstyleComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'aboutme', component: AboutmeComponent },
 ];
 
 @NgModule({

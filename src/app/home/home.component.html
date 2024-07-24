@@ -1,64 +1,34 @@
-<section class="home">
-  <div class="container">
-    <h1>Welcome to Makeup </h1>
-    <p>Discover the latest trends in makeup and hairstyling</p>
-    <div class="cta">
-      <a href="#" class="btn">Explore Makeup</a>
-      <a href="#" class="btn">Explore Hairstyles</a>
+<div class="text-center">
+  <h1 style="font-family: 'Roboto', sans-serif;">Welcome to Makeover by Preeti</h1>
+  <p style="font-family: 'Roboto', sans-serif;">Located in the heart of Frisco, TX, we specialize in enhancing your natural beauty for any occasion. Whether it's a wedding, baby shower, birthday, or half saree ceremony, our expert team provides exceptional makeup and hairstyling services.</p>
+</div>
+
+<div class="container">
+  <section class="my-1">
+    <h2 class="text-center" style="font-family: 'Roboto', sans-serif;"><u>Our Services</u></h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-card">
+          <h3 style="font-family: 'Roboto', sans-serif;">Bridal Makeup & Hair</h3>
+          <p style="font-family: 'Roboto', sans-serif;">Create the perfect look for your big day, tailored to your style and vision.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h3 style="font-family: 'Roboto', sans-serif;">Event Makeup & Hair</h3>
+          <p style="font-family: 'Roboto', sans-serif;">For baby showers, birthdays, or any special occasion, look stunning and feel confident.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h3 style="font-family: 'Roboto', sans-serif;">Cultural Celebrations</h3>
+          <p style="font-family: 'Roboto', sans-serif;">Specializing in traditional looks for events like half saree ceremonies.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<section class="features">
-  <div class="container">
-    <div class="feature">
-      <h2>Discover the Latest Trends</h2>
-      <p>Explore a diverse collection of makeup styles and hairstyle options to suit every occasion, mood, and personality.</p>
-    </div>
-    <div class="feature">
-      <h2>Expert Advice and Tutorials</h2>
-      <p>Learn from experienced makeup artists and hairstylists with our extensive library of tutorials, tips, and tricks.</p>
-    </div>
-    <div class="feature">
-      <h2>Personalized Recommendations</h2>
-      <p>Find the perfect makeup products and hair care essentials tailored to your unique needs and preferences.</p>
-    </div>
-  </div>
-</section>
-
-<section class="community">
-  <div class="container">
-    <h2>Join Our Community</h2>
-    <p>Connect with like-minded beauty enthusiasts, share your favorite looks, and stay inspired with daily beauty content.</p>
-    <a href="#" class="btn">Join Now</a>
-  </div>
-</section>
-
-<h2>--------------Book Now---------------</h2>
-<form (ngSubmit)="submitBooking()">
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" [(ngModel)]="booking.name" required>
-  </div>
-  <div>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" [(ngModel)]="booking.email" required>
-  </div>
-  <div>
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" [(ngModel)]="booking.phone" required>
-  </div>
-  <div>
-    <label for="service">Service:</label>
-    <select id="service" name="service" [(ngModel)]="booking.service" required>
-      <option value="Hairstyle">Hairstyle</option>
-      <option value="Makeup">Makeup</option>
-      <!-- Add more options as needed -->
-    </select>
-  </div>
-  <button type="submit">BOOK NOW</button>
-</form>
-
-
-<ng-image-slider [images]="imageObject" #nav></ng-image-slider>
-
+<div class="text-center my-4">
+  <p style="font-family: 'Roboto', sans-serif;">At Makeover by Preeti, we believe in personalized service and attention to detail. Book your appointment today and experience a transformation that highlights your unique beauty.</p>
+</div>

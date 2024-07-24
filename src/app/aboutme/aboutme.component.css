@@ -1,0 +1,23 @@
+.aboutme-container {
+  padding: 20px;
+}
+
+.aboutme-container .row {
+  display: flex;
+  align-items: center;
+}
+
+.aboutme-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.aboutme-container h2 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.aboutme-container p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}

@@ -1,3 +1,19 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 
 
+.body {
+    font-family: Arial, sans-serif;
+    background-image: url('/src/assets/makeup1.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+}
+
+
+.logo {
+  display: grid;
+  align-items: start;
+  justify-content: start; /* Aligns the logo to the top left corner */
+  margin: 0;
+  padding: 0;
+}

@@ -8,8 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { MakeupComponent } from './makeup/makeup.component';
 import { HairstyleComponent } from './hairstyle/hairstyle.component';
 import { ContactComponent } from './contact/contact.component';
-import {NgImageSliderModule} from "ng-image-slider";
 import {FormsModule} from "@angular/forms";
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,13 @@ import {FormsModule} from "@angular/forms";
     HomeComponent,
     MakeupComponent,
     HairstyleComponent,
-    ContactComponent
+    ContactComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

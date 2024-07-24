@@ -12,3 +12,41 @@
   font-size: 1rem;
   color: #555;
 }
+
+.hairstyle {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hairstyle h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hairstyle p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+.carousel, .carousel-inner, .carousel-item, .carousel-item img {
+  max-width: 100%; /* Full width within container */
+  max-height: 80vh; /* Maximum height, adjust as needed */
+  object-fit: contain; /* Adjusts the image size to maintain aspect ratio within the given dimensions */
+  /* Light skin background color code */
+
+  background-color: rgb(243,224,194); /* Light skin background color */
+}
+
+/* Adjust the .makeup container if necessary to ensure it centers the carousel vertically and horizontally */
+.hairstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust based on the max-height of the images */
+}
+
+/* Ensure the body and html tags do not overflow horizontally */
+html, body {
+  overflow-x: hidden;
+}
