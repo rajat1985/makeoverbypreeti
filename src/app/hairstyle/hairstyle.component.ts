@@ -7,12 +7,12 @@ import { Component, OnInit ,Input} from '@angular/core';
 export class HairstyleComponent implements OnInit {
 
 imageUrls: string[] = [
-      '/assets/hairstyle/hairstyle1.jpeg',
-      '/assets/hairstyle/hairstyle2.jpeg',
-      '/assets/hairstyle/hairstyle3.jpeg',
-      '/assets/hairstyle/hairstyle4.jpeg',
-      '/assets/hairstyle/hairstyle5.jpeg',
-      '/assets/hairstyle/hairstyle6.jpeg',
+      './assets/hairstyle/hairstyle1.jpeg',
+      './assets/hairstyle/hairstyle2.jpeg',
+      './assets/hairstyle/hairstyle3.jpeg',
+      './assets/hairstyle/hairstyle4.jpeg',
+      './assets/hairstyle/hairstyle5.jpeg',
+      './assets/hairstyle/hairstyle6.jpeg',
 
       // Add more image URLs as needed
     ];
