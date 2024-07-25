@@ -35,3 +35,12 @@
 html, body {
   overflow-x: hidden;
 }
+
+
+.carousel-control-next-icon.custom-black {
+  background-color: black;
+}
+
+.carousel-control-prev-icon.custom-black {
+  background-color: black;
+}

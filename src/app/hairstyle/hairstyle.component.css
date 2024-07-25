@@ -35,7 +35,7 @@
   object-fit: contain; /* Adjusts the image size to maintain aspect ratio within the given dimensions */
   /* Light skin background color code */
 
-  background-color: rgb(243,224,194); /* Light skin background color */
+  background-color: white; /* Light skin background color */
 }
 
 /* Adjust the .makeup container if necessary to ensure it centers the carousel vertically and horizontally */
@@ -49,4 +49,12 @@
 /* Ensure the body and html tags do not overflow horizontally */
 html, body {
   overflow-x: hidden;
+}
+
+.carousel-control-next-icon.custom-black {
+  background-color: black;
+}
+
+.carousel-control-prev-icon.custom-black {
+  background-color: black;
 }
