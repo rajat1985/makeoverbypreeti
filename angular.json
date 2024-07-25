@@ -34,7 +34,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/makeup-hairstyle-app/",
+              "baseHref": "/makeoverbypreeti/",
               "budgets": [
                 {
                   "type": "initial",
@@ -104,7 +104,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/makeup-hairstyle-app/",
+            "baseHref": "/makeoverbypreeti/",
             "outputPath": "docs"
           }
         }
