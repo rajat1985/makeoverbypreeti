@@ -1,10 +1,10 @@
-footer {
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1a237e !important;;
-  color: white;
-  text-align: center;
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:grey;
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-color: red;
+    color:red;
 }

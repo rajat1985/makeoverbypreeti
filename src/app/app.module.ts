@@ -10,6 +10,7 @@ import { HairstyleComponent } from './hairstyle/hairstyle.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule} from "@angular/forms";
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     MakeupComponent,
     HairstyleComponent,
     ContactComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
