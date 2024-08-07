@@ -1,9 +1,9 @@
-.home-container{
-   padding: 20px;
-    background-color: #F5F5F5 !important;
-     border-radius: 10px;
-     background-image : url('https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b');
-
+.home-container {
+  background-image: url('/assets/makeup.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh; /* Adjust as needed */
 }
 
 
@@ -11,33 +11,62 @@
 .home-container .img-fluid {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .service-card {
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+   background: rgba(0, 0, 0, 0.65); /* Adjust transparency as needed */
+    z-index: -1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 5px; /* Optional: adjust as needed */
 }
 
 .service-card h3 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
+  color: white;
 }
 
 .service-card p {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  color: white;
 }
 
 .col-2 {
   flex: 0 0 20%;
   max-width: 20%;
+  color:white;
 }
 
 .col-10 {
   flex: 0 0 80%;
   max-width: 80%;
+  color:white;
+}
+
+.text-overlay {
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(200, 200, 0, 0.9);
+  border-radius: 5px; /* Optional: adjust as needed */
 }
 
 

@@ -4,7 +4,7 @@
       <div *ngFor="let image of imageUrls; let i = index" class="carousel-item" [class.active]="i === 0">
         <img [src]="image.url" [alt]="'Hairstyle ' + (i + 1)">
         <div class="carousel-caption">
-          <h3>Hairstyle {{ i + 1 }}</h3>
+          <!--<h3>Hairstyle {{ i + 1 }}</h3>-->
           <p>{{ image.caption }}</p>
         </div>
       </div>
