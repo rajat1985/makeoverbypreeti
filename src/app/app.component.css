@@ -1,10 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+/*.layout {
+  display: flex;
+  flex: 1;
+}*/
 
-body {
-    font-family: Arial, sans-serif;
-    background-image:grey;
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the background image */
-    background-color: red;
-    color:red;
+app-navbar {
+  background-color: #f8f9fa;
+}
+
+.main-container {
+  flex: 1;
+  padding: 1px;
+  background-color:#F5F5F5 !important;
+}
+
+app-header, app-footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+
+  font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+}
+
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+app-footer {
+  margin-top: auto;
 }

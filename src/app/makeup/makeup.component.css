@@ -1,9 +1,9 @@
 
-.makeup-container{
+/*.makeup-container{
  padding: 20px;
   background-color: #F5F5F5 !important;
   border-radius: 10px;
-}
+}*/
 /*
 .makeup h2 {
   font-size: 2rem;
@@ -52,3 +52,69 @@ html, body {
   background-color: black;
 }*/
 
+/*.makeup-container {
+  position: relative;
+  height: 60vh; *//* Full height *//*
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.carousel-indicators {
+  top: 50%; /* Position the indicators at the top */
+  transform: translateY(-30%);
+  bottom: auto; /* Remove the bottom positioning */
+}
+
+.carousel-indicators li {
+  background-color: #000; /* Make the indicators visible */
+  border: 1px solid #fff; /* Add a white border for better visibility */
+  width: 12px; /* Increase the size for better visibility */
+  height: 12px; /* Increase the size for better visibility */
+  border-radius: 50%; /* Make them circular */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Make the active indicator stand out */
+  border: 1px solid #000; /* Add a black border for better visibility */
+}
+
+.carousel-indicators li::before {
+  content: ''; /* Remove default content */
+  font-weight: bold; /* Make the indicators bold */
+}
+
+.carousel-caption {
+  top: 55%;
+  left: middle;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  margin: 5px 0 0;
+  font-size: 1em;
+}

@@ -1,6 +1,6 @@
-  <div class="makeup-container">
+  <!--<div class="makeup-container">
     <div class="row">
-      <div class="col-md-8"> <!-- 70% width -->
+      <div class="col-md-8"> &lt;!&ndash; 70% width &ndash;&gt;
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -38,11 +38,37 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4"> <!-- 30% width -->
+      <div class="col-md-4"> &lt;!&ndash; 30% width &ndash;&gt;
         <div class="description">
           <h2>Makeup</h2>
           <p>Explore our diverse range of makeup styles, from classic to contemporary. Each style is crafted to enhance your natural beauty and make you feel confident and glamorous.</p>
         </div>
       </div>
     </div>
+  </div>-->
+
+  <div class="makeup-container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div *ngFor="let image of imageUrls; let i = index" class="carousel-item" [class.active]="i === 0">
+          <img [src]="image.url" [alt]="'Makeup ' + (i + 1)">
+          <div class="carousel-caption">
+            <h3>Makeup {{ i + 1 }}</h3>
+            <p>{{ image.caption }}</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon custom-black" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon custom-black" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol class="carousel-indicators">
+        <li *ngFor="let image of imageUrls; let i = index" [class.active]="i === 0" data-target="#carouselExampleControls" [attr.data-slide-to]="i"></li>
+      </ol>
+    </div>
   </div>
+

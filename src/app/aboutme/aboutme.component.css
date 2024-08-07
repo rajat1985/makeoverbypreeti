@@ -1,6 +1,5 @@
 .aboutme-container {
-  padding: 20px;
-  background-color: #F5F5F5;
+  background-color: #F5F5F5 !important;
 }
 
 .aboutme-container .row {

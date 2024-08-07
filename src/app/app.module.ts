@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import {FormsModule} from "@angular/forms";
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     HairstyleComponent,
     ContactComponent,
     AboutmeComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
