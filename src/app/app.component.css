@@ -20,13 +20,12 @@ app-navbar {
 }
 
 app-header, app-footer {
-  background-color: black;
+  background-color: rgb(86, 61, 124)  !important;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
-
   font-family: 'Roboto', sans-serif;
-    padding-top: 15px;
+    padding-top: 10px;
     color: white;
     text-align: center;
 }
@@ -38,5 +37,5 @@ app-header {
 }
 
 app-footer {
-  margin-top: auto;
+  margin-top:5px ;
 }

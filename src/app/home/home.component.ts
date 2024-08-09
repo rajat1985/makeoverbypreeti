@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HomeComponent implements OnInit {
-
-
-
-
   constructor() { }
 
   ngOnInit(): void {
@@ -38,5 +34,26 @@ export class HomeComponent implements OnInit {
       service: ''
     };
   }
+
+
+
+    images = [
+      './assets/makeup1.jpeg',
+      './assets/makeup2.jpeg',
+      './assets/makeup3.jpeg',
+      './assets/makeup4.jpeg',
+            './assets/makeup5.jpeg',
+            './assets/makeup6.jpeg',
+             './assets/makeup7.jpeg',
+      // Add more image paths as needed
+    ];
+    currentIndex = 0;
+
+   /*  openCarousel(index: number) {
+      this.currentIndex = index;
+      const carouselModal = new Modal(document.getElementById('carouselModal'));
+      carouselModal.show();
+    } */
+
 
 }

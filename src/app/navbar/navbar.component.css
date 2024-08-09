@@ -1,5 +1,5 @@
 .navbar {
-  background-color: black !important; /* Changed color to pink */
+  background-color: rgb(86, 61, 124)  !important; /* Changed color to pink */
   padding: 0.5rem 0;
   border: 10px;
 }
@@ -47,10 +47,45 @@
   font-weight: normal;
 }
 
-.navbar-nav li a:hover {
-  text-decoration: underline;
-  color :white;
-  font-weight: normal;
+.nav-link:hover {
+  background-color: gold; /* Change background color on hover */
+  color: black !important; /* Change text color on hover */
+  border-radius: 5px; /* Ensure border-radius is applied on hover */
 }
 
 
+/* Ensure the navbar brand and toggler are properly aligned */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+  color: red;
+}
+
+
+/* src/app/logo/logo.component.css */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4081; /* Customize color */
+  margin: 0;
+  font-family: 'Cursive', cursive, sans-serif; /* Add cursive font */
+}
+
+.logo-subtext {
+  font-size: 14px;
+  color: gold; /* Customize color */
+  margin: 0;
+  font-weight: bold;
+}
