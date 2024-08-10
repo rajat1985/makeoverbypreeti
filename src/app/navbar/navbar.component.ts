@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
+  @ViewChild('navbarNav') navbarNav!: ElementRef;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  collapseNavbar() {
+    const navbar = this.navbarNav.nativeElement;
+    if (navbar.classList.contains('show')) {
+      navbar.classList.remove('show');
+    }
   }
-
 }

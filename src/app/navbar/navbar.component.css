@@ -61,18 +61,22 @@
 }
 
 .navbar-toggler {
-  border: none;
-  color: red;
+  color: white;
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 
 /* src/app/logo/logo.component.css */
 .logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
+  border: 2px solid gold; /* Customize border color */
+  border-radius: 50px; /* Create oval shape */
+  background-color: rgb(86, 61, 124)  !important;  /* Set background color to white */
+  padding: 5px 10px; /* Add padding for better appearance */
+  display: inline-block; /* Ensure the container is inline-block */
 }
 
 .logo-text {
@@ -85,7 +89,7 @@
 
 .logo-subtext {
   font-size: 14px;
-  color: gold; /* Customize color */
+  color: white; /* Customize color */
   margin: 0;
   font-weight: bold;
 }

@@ -1,17 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <!-- Logo aligned to the left -->
-    <!--<a href="#" class="navbar-brand">
-      <img src="./assets/logo.png" alt="MakeoverByPreeti Logo" style="height: 40px; width: 100px; background-color: white;">
-    </a>
-    <h2><span style="font-family: 'Roboto', cursive; color: white; text-transform: capitalize;">MakeOverByPreeti Inc.</span></h2>
-   -->
-    <!-- src/app/logo/logo.component.html -->
     <div class="logo-container">
       <span class="logo-text"><u><i>MakeOver</i></u></span>
-      <span class="logo-subtext">By Preeti</span>
+      <span class="logo-subtext">  By Preeti</span>
     </div>
-
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,22 +12,22 @@
     </button>
 
     <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav" #navbarNav>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">Home</a>
+          <a class="nav-link" routerLink="/" (click)="collapseNavbar()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/makeup">Makeup</a>
+          <a class="nav-link" routerLink="/makeup" (click)="collapseNavbar()">Makeup</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/hairstyle">Hairstyle</a>
+          <a class="nav-link" routerLink="/hairstyle" (click)="collapseNavbar()">Hairstyle</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+          <a class="nav-link" routerLink="/contact" (click)="collapseNavbar()">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/aboutme">About Me</a>
+          <a class="nav-link" routerLink="/aboutme" (click)="collapseNavbar()">About Me</a>
         </li>
       </ul>
     </div>
