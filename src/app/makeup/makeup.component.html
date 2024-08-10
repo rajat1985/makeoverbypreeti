@@ -52,10 +52,10 @@
       <div class="carousel-inner">
         <div *ngFor="let image of imageUrls; let i = index" class="carousel-item" [class.active]="i === 0">
           <img [src]="image.url" [alt]="'Makeup ' + (i + 1)">
-          <div class="carousel-caption">
-            <!--<h3>Makeup {{ i + 1 }}</h3>-->
+         <!-- <div class="carousel-caption">
+            &lt;!&ndash;<h3>Makeup {{ i + 1 }}</h3>&ndash;&gt;
             <p>{{ image.caption }}</p>
-          </div>
+          </div>-->
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

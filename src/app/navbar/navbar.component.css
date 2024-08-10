@@ -75,7 +75,7 @@
   border: 2px solid gold; /* Customize border color */
   border-radius: 50px; /* Create oval shape */
   background-color: rgb(86, 61, 124)  !important;  /* Set background color to white */
-  padding: 5px 10px; /* Add padding for better appearance */
+  padding: 5px 12px; /* Add padding for better appearance */
   display: inline-block; /* Ensure the container is inline-block */
 }
 
