@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let image of images">
+      <div class="image-container" (click)="openModal(image)">
+        <img [src]="image" class="img-fluid" alt="Makeup Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" [class.show]="isModalOpen" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" class="modal-image" [style.transform]="'scale(' + zoomLevel + ')'">
+    <div class="zoom-controls">
+      <button (click)="zoomIn()">+</button>
+      <button (click)="zoomOut()">-</button>
+    </div>
+  </div>
+</div>

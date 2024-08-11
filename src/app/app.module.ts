@@ -12,6 +12,7 @@ import {FormsModule} from "@angular/forms";
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HeaderComponent } from './header/header.component';
     ContactComponent,
     AboutmeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

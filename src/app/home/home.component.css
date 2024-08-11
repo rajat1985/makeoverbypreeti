@@ -1,82 +1,45 @@
 .home-container {
-  /*background-image: url('/assets/makeup.jpg');*/
-  background-color :grey;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh; /* Adjust as needed */
-}
-
-
-
-.home-container .img-fluid {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  padding: 20px;
 }
 
 .service-card {
+  border: 2px solid white;
   padding: 20px;
-  border-radius: 10px;
-   background: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
+  text-align: center;
+  background-color: #f8f9fa;
+  height:400px;
+  color:#333333;
 }
 
-.service-card h3 {
-  font-family: 'Roboto', sans-serif;
+.service-card1 {
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  height:250px;
+  color:#333333;
+}
+
+.service-image {
+  border: 2px solid white;
   margin-bottom: 10px;
-  color: white;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.service-card p {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: white;
-}
-
-.col-2 {
-  flex: 0 0 20%;
-  max-width: 20%;
-  color:white;
-}
-
-.col-10 {
-  flex: 0 0 80%;
-  max-width: 80%;
-  color:white;
-}
-
-/*.text-overlay {
-  font-family: 'Roboto', sans-serif;
-  color: red;
-  position: relative;
+.cta-button {
   display: inline-block;
-}
-
-.text-overlay::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); *//* Adjust transparency as needed *//*
-  z-index: -1;
-  box-shadow: 0 4px 8px rgba(200, 200, 0, 0.9);
-  border-radius: 5px; *//* Optional: adjust as needed *//*
-}*/
-
-.my-works {
-  margin-top: 2rem;
-}
-
-.image-card {
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-.image-card img {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: rgb(86, 61, 124);
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.cta-button:hover {
+  background-color: gold;
+  color :black;
+}

@@ -25,7 +25,7 @@ app-header, app-footer {
   padding: 10px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-    padding-top: 10px;
+    padding-top: 20px;
     color: white;
     text-align: center;
 }
@@ -37,5 +37,5 @@ app-header {
 }
 
 app-footer {
-  margin-top:5px ;
+  margin-top:15px ;
 }
