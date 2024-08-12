@@ -9,7 +9,6 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '**', component: HomeComponent },
   { path: 'makeup', component: MakeupComponent },
   { path: 'hairstyle', component: HairstyleComponent },
   { path: 'contact', component: ContactComponent },
