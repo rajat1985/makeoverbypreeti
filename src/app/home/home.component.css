@@ -7,17 +7,26 @@
   padding: 20px;
   text-align: center;
   background-color: #f8f9fa;
-  height:400px;
+  height:auto;
   color:#333333;
 }
 
 .service-card1 {
-  border: 2px solid white;
   padding: 20px;
   text-align: center;
   background-color: #f8f9fa;
   height:auto;
   color:#333333;
+}
+
+
+.service-card2 {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  color:black;
+  height:auto;
+  margin-top: 2px;
 }
 
 .service-image {
