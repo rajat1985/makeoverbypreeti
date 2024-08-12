@@ -13,6 +13,7 @@
 
 .service-card1 {
   padding: 20px;
+   border: 2px solid white;
   text-align: center;
   background-color: #f8f9fa;
   height:auto;
@@ -22,6 +23,7 @@
 
 .service-card2 {
   padding: 20px;
+   border: 2px solid white;
   text-align: center;
   background-color: #f8f9fa;
   color:black;
