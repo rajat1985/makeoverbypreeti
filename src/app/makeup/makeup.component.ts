@@ -8,7 +8,6 @@ import { Component, OnInit,Input } from '@angular/core';
 export class MakeupComponent implements OnInit {
 
 imageUrls: { url: string, caption: string }[] = [
-  { url: './assets/makeup1.jpeg', caption: 'Simple Makeup' },
   { url: './assets/makeup2.jpeg', caption: 'Simple Makeup' },
   { url: './assets/makeup3.jpeg', caption: 'Simple Makeup' },
   { url: './assets/makeup4.jpeg', caption: 'Simple Makeup' },

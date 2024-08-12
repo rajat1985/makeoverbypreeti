@@ -12,10 +12,10 @@ export class GalleryComponent implements OnInit {
   zoomLevel = 1;
 
   ngOnInit(): void {
-   let images = [57];
+   let images = [71];
 
         //iterate images from 1 to 57
-        for (let i = 1; i <= 57; i++) {
+        for (let i = 1; i <= 71; i++) {
           this.images.push(`./assets/gallery/gallery${i}.jpeg`);
           }
   }

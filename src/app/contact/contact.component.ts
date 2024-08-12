@@ -1,37 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import emailjs from 'emailjs-com';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  @ViewChild('contactForm') contactForm: any;
+  thankYouMessage: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
-  emailjs.init('EkxCKLVI2Iv0XCnuu');
-
-  /* emailjs.init({
-    publicKey: 'EkxCKLVI2Iv0XCnuu',
-    // Do not allow headless browsers
-    blockHeadless: true,
-    blockList: {
-      // Block the suspended emails
-      list: ['foo@emailjs.com', 'bar@emailjs.com'],
-      // The variable contains the email address
-      watchVariable: 'userEmail',
-    },
-    limitRate: {
-      // Set the limit rate for the application
-      id: 'app',
-      // Allow 1 request per 10s
-      throttle: 10000,
-    },
-  });
-  } */
+    emailjs.init('EkxCKLVI2Iv0XCnuu');
   }
-
 
   onSubmit(form: any): void {
     const userDetails = {
@@ -52,24 +35,16 @@ export class ContactComponent implements OnInit {
       contact_number: '945-260-5235',
     };
 
-    /* emailjs.send("service_dxo76rq","template_iwpo9gq",{
-    from_name: "rajat",
-    user_name: "Hello",
-    contact_number: "469",
-    your_name: "Rajat Saha",
-    your_position: "Senion",
-    your_company: "MakeOverBy Prreti",
-    reply_to: "test",
-    });
-    } */
-
-     emailjs.send('service_dxo76rq', 'template_iwpo9gq',templateParams)
+    emailjs.send('service_dxo76rq', 'template_iwpo9gq', templateParams)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        this.thankYouMessage = 'Thank you for reaching out to us!';
+        this.contactForm.reset();
+        setTimeout(() => {
+          this.thankYouMessage = '';
+        }, 5000); // Hide the message after 5 seconds
       }, (error) => {
         console.error('FAILED...', error);
       });
   }
-
-
 }
