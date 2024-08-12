@@ -7,6 +7,9 @@ import { HairstyleComponent } from './hairstyle/hairstyle.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'makeup', component: MakeupComponent },
@@ -16,8 +19,10 @@ const routes: Routes = [
   { path: 'aboutme', component: AboutmeComponent },
 ];
 
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
