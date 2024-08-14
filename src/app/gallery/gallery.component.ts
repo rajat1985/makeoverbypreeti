@@ -12,12 +12,16 @@ export class GalleryComponent implements OnInit {
   zoomLevel = 1;
 
   ngOnInit(): void {
-   let images = [71];
+   let images = [32];
 
-        //iterate images from 1 to 57
-        for (let i = 1; i <= 71; i++) {
-          this.images.push(`./assets/gallery/gallery${i}.jpeg`);
-          }
+
+          for (let i = 1; i <= 20; i++) {
+                    this.images.push(`./assets/gallery/makeup${i}.jpeg`);
+                    }
+                     //iterate images from 1 to 57
+                            for (let i = 1; i <= 12; i++) {
+                              this.images.push(`./assets/gallery/hairstyle${i}.jpeg`);
+                              }
   }
 
   openModal(image: string): void {
