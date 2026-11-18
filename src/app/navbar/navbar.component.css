@@ -1,112 +1,94 @@
 .navbar {
-  background-color: rgb(86, 61, 124)  !important; /* Changed color to pink */
-  padding: 0.5rem 0;
-  border: 10px;
+  min-height: 84px;
+  padding: 0.8rem max(1.25rem, calc((100vw - var(--content-width)) / 2));
+  background: rgba(255, 255, 255, 0.96) !important;
+  box-shadow: var(--shadow-nav);
+  backdrop-filter: blur(14px);
 }
 
-
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  color: #fff;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
-  margin: 0;
+.navbar > .container-fluid {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
   padding: 0;
-  display: flex;
-}
-
-.nav-links li {
-  margin-right: 1rem;
-}
-
-.nav-links li:last-child {
-  margin-right: 0;
-}
-
-.nav-link {
-  color: white !important; /* Ensures font color is white */
-  font-family: 'Roboto', sans-serif;
-}
-
-.navbar-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  color :#E0E0E0;
-  font-weight: normal;
-}
-
-.nav-link:hover {
-  background-color: gold; /* Change background color on hover */
-  color: black !important; /* Change text color on hover */
-  border-radius: 5px; /* Ensure border-radius is applied on hover */
-}
-
-
-/* Ensure the navbar brand and toggler are properly aligned */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-toggler {
-  color: white;
-  border-color: white;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-
-/* src/app/logo/logo.component.css */
-.logo-container {
-  border-radius: 1px; /* Create oval shape */
-  background-color: rgb(86, 61, 124)  !important;  /* Set background color to white */
-  padding: 5px 12px; /* Add padding for better appearance */
-  display: inline-block; /* Ensure the container is inline-block */
 }
 
 .logo-image {
-  height: 50px; /* Set height of logo */
-  object-fit: cover; /* Ensure the image covers the entire area */
+  display: block;
+  width: 64px;
+  height: 54px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
 }
 
-.logo-text {
-  font-size: 20px;
-  font-weight: bold;
-  color: white; /* Customize color */
-  margin: 0;
+.navbar-nav {
+  align-items: center;
+  gap: 0.25rem;
 }
 
-
-
-.logo-subtext {
-  font-size: 16px;
-   color: gold; /* Customize color */
-   margin: 0;
-   border-top: 1px solid gold; /* Add top border */
-   border-left: 1px solid gold;
-   border-bottom: 1px solid gold; /* Add bottom border */
-   border-right: 1px solid gold;
-   padding-left: 5px;
+.navbar .nav-link {
+  padding: 0.65rem 0.9rem !important;
+  border-radius: 999px;
+  color: var(--color-muted) !important;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: color 180ms ease, background-color 180ms ease;
 }
 
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  background: var(--color-primary-soft);
+  color: var(--color-primary) !important;
+}
 
-/* Ensure the navbar menu is right-aligned on mobile */
-@media (max-width: 576px) {
+.navbar-nav .nav-item:nth-child(5) .nav-link {
+  margin-left: 0.4rem;
+  padding: 0.68rem 1.2rem !important;
+  background: var(--color-primary);
+  color: #fff !important;
+}
+
+.navbar-nav .nav-item:nth-child(5) .nav-link:hover {
+  background: var(--color-primary-hover);
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.navbar-toggler-icon {
+  filter: sepia(0.35) saturate(0.6);
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 72px;
+    padding: 0.65rem 1.25rem;
+  }
+
   .navbar-collapse {
+    padding: 0.75rem 0 0.25rem;
+  }
+
+  .navbar-nav {
+    align-items: stretch;
+    gap: 0.15rem;
+  }
+
+  .navbar .nav-link {
+    padding: 0.7rem 0.85rem !important;
+  }
+
+  .navbar-nav .nav-item:nth-child(5) .nav-link {
+    margin: 0.35rem 0 0;
     text-align: center;
   }
 }

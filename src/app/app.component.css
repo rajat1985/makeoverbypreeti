@@ -2,40 +2,32 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: none;
+  padding: 0;
 }
 
-/*.layout {
+.layout {
   display: flex;
   flex: 1;
-}*/
+  flex-direction: column;
+  min-width: 0;
+}
 
 app-navbar {
-  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: block;
 }
 
 .main-container {
   flex: 1;
-  padding: 1px;
-  background-color:#F5F5F5 !important;
-}
-
-app-header, app-footer {
-  background-color: rgb(86, 61, 124)  !important;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
-    color: white;
-    text-align: center;
-}
-
-app-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  width: 100%;
+  padding: 0;
+  background: var(--color-canvas);
 }
 
 app-footer {
-  margin-top:15px ;
+  display: block;
+  margin-top: 0;
 }

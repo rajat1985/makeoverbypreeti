@@ -1,37 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
   <div class="container-fluid">
-    <!-- Logo aligned to the left -->
-    <div>
+    <a class="navbar-brand" routerLink="/" aria-label="Makeover by Preeti home">
       <img src="./assets/logo.jpeg" alt="Makeover by Preeti" class="logo-image" />
-      <!--<span class="logo-text"> &nbsp;PREETI &nbsp;  </span>
-      <span class="logo-subtext">&nbsp; MAKEUP ARTIST &nbsp;</span>-->
-    </div>
+    </a>
 
-    <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="navbarNav" #navbarNav>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" (click)="collapseNavbar()">Home</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/makeup" (click)="collapseNavbar()">Makeup</a>
+          <a class="nav-link" routerLink="/makeup" routerLinkActive="active" (click)="collapseNavbar()">Makeup</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/hairstyle" (click)="collapseNavbar()">Hairstyle</a>
+          <a class="nav-link" routerLink="/hairstyle" routerLinkActive="active" (click)="collapseNavbar()">Hairstyle</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/gallery" (click)="collapseNavbar()">Gallery</a>
+          <a class="nav-link" routerLink="/gallery" routerLinkActive="active" (click)="collapseNavbar()">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" (click)="collapseNavbar()">Contact</a>
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="collapseNavbar()">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/aboutme" (click)="collapseNavbar()">About Me</a>
+          <a class="nav-link" routerLink="/aboutme" routerLinkActive="active" (click)="collapseNavbar()">About Me</a>
         </li>
       </ul>
     </div>
