@@ -1,0 +1,46 @@
+/* Theme overrides for the published GitHub Pages build. */
+:root {
+  color-scheme: light;
+  --color-ink: #0F172A;
+  --color-muted: #64748B;
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-soft: #DBEAFE;
+  --color-accent: #2563EB;
+  --color-canvas: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-footer: #0F172A;
+  --shadow-card: 0 16px 38px rgba(15, 23, 42, 0.08);
+  --shadow-nav: 0 4px 24px rgba(15, 23, 42, 0.06);
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Inter', 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-hover);
+}
