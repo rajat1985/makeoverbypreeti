@@ -2,18 +2,18 @@
 
 :root {
   color-scheme: light;
-  --color-ink: #29242a;
-  --color-muted: #746d73;
-  --color-primary: #74445f;
-  --color-primary-hover: #5e354b;
-  --color-primary-soft: #f2e8ee;
-  --color-accent: #b98575;
-  --color-canvas: #fbf8f6;
-  --color-surface: #ffffff;
-  --color-border: #eee5e1;
-  --color-footer: #30262d;
-  --shadow-card: 0 16px 38px rgba(57, 39, 49, 0.08);
-  --shadow-nav: 0 4px 24px rgba(57, 39, 49, 0.06);
+  --color-ink: #0F172A;
+  --color-muted: #64748B;
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-soft: #DBEAFE;
+  --color-accent: #2563EB;
+  --color-canvas: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-footer: #0F172A;
+  --shadow-card: 0 16px 38px rgba(15, 23, 42, 0.08);
+  --shadow-nav: 0 4px 24px rgba(15, 23, 42, 0.06);
   --radius-sm: 10px;
   --radius-md: 18px;
   --radius-lg: 28px;
@@ -23,11 +23,11 @@
   --space-4: 2rem;
   --space-5: 3rem;
   --content-width: 1180px;
-  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Inter', 'Segoe UI', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -65,6 +65,13 @@ a:focus-visible, button:focus-visible {
 ::selection {
   background: var(--color-primary-soft);
   color: var(--color-primary-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {
